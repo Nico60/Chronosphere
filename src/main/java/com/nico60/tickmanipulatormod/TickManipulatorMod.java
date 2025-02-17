@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.nico60.tickmanipulatormod.item.BlockRestorerItem;
 import com.nico60.tickmanipulatormod.item.DestinyClockItem;
 import com.nico60.tickmanipulatormod.item.RewindingHourglassItem;
+import com.nico60.tickmanipulatormod.item.TeleportBeaconItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -34,19 +35,21 @@ public class TickManipulatorMod {
     public static final DeferredRegister<CreativeModeTab> MOD_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MOD_ID);
 
-
     public static final RegistryObject<Item> BLOCK_RESTORER = ITEMS.register("block_restorer",
             () -> new BlockRestorerItem(new Item.Properties().stacksTo(1).setId(ITEMS.key("block_restorer"))));
     public static final RegistryObject<Item> DESTINY_CLOCK = ITEMS.register("destiny_clock",
             () -> new DestinyClockItem(new Item.Properties().stacksTo(1).setId(ITEMS.key("destiny_clock"))));
     public static final RegistryObject<Item> REWINDING_HOURGLASS = ITEMS.register("rewinding_hourglass",
             () -> new RewindingHourglassItem(new Item.Properties().stacksTo(1).setId(ITEMS.key("rewinding_hourglass"))));
+    public static final RegistryObject<Item> TELEPORT_BEACON = ITEMS.register("teleport_beacon",
+            () -> new TeleportBeaconItem(new Item.Properties().stacksTo(1).setId(ITEMS.key("teleport_beacon"))));
 
     public static final RegistryObject<CreativeModeTab> MOD_TAB = MOD_TABS.register("mod_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(DESTINY_CLOCK.get()))
                     .title(Component.translatable("itemGroup.tickmanipulatormod"))
                     .displayItems((parameters, output) -> {
+                        output.accept(TELEPORT_BEACON.get());
                         output.accept(DESTINY_CLOCK.get());
                         output.accept(REWINDING_HOURGLASS.get());
                         output.accept(BLOCK_RESTORER.get());

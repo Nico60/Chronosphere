@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tickmanipulatormod:item/teleport_beacon"
+  }
+}
