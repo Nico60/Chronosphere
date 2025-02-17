@@ -2,7 +2,6 @@
     "entity.tickmanipulatormod.past_self": "Ombre du Passé",
     "item.tickmanipulatormod.destiny_clock": "Horloge du Destin",
     "item.tickmanipulatormod.rewinding_hourglass": "Sablier Rembobinant",
-    "item.tickmanipulatormod.time_crystal": "Cristal du Temps",
     "item.tickmanipulatormod.block_restorer": "Restaurateur de bloc",
     "message.time_slow_down": "⏪ Le temps ralentit...",
     "message.time_is_speeding_up": "⏩ Le temps accélère...",
@@ -10,6 +9,5 @@
     "message.time_restored": "Le flux temporel revient à la normale.",
     "message.ticks_speed": "⏩ Vitesse des ticks : %d",
     "message.time_rewind": "⏪ Le temps recule !",
-    "message.time_forward": "⏩ Le temps s'accélère !",
-    "message.past_self_activated": "L'ombre de ton passé apparaît..."
+    "message.time_forward": "⏩ Le temps s'accélère !"
 }

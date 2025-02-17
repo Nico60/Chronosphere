@@ -2,7 +2,6 @@
     "entity.tickmanipulatormod.past_self": "Past Self",
     "item.tickmanipulatormod.destiny_clock": "Clock of Destiny",
     "item.tickmanipulatormod.rewinding_hourglass": "Rewinding Hourglass",
-    "item.tickmanipulatormod.time_crystal": "Time Crystal",
     "item.tickmanipulatormod.block_restorer": "Block Restorer",
     "itemGroup.tickmanipulatormod": "Chronosphere",
     "message.time_slow_down": "⏪ Time slows down...",
@@ -11,6 +10,5 @@
     "message.time_restored": "Time flow returns to normal.",
     "message.ticks_speed": "⏩ Tick speed : %d",
     "message.time_rewind": "⏪ Time goes backwards !",
-    "message.time_forward": "⏩ Time is speeding up !",
-    "message.past_self_activated": "Your past shadow emerges..."
+    "message.time_forward": "⏩ Time is speeding up !"
 }
